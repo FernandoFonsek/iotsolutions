@@ -1,7 +1,9 @@
 import { BrowserRouter,Routes, Route } from "react-router-dom";
+import Config from "./pages/Config";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Singin from "./pages/Singin";
+import Tracker from "./pages/Tracker";
 
 
 function App() {
@@ -10,7 +12,9 @@ function App() {
       <Routes>
           <Route path="/login" element={<Singin/>}/>
           <Route path="/home" element={<Home/>}/>
-          <Route path="/register" element={<Register/>}/>
+          <Route path="/" element={<Register/>}/>
+          <Route path="/config" element={<Config/>}/>
+          <Route path="/tracker" element={<Tracker/>}/>
       </Routes>
     </BrowserRouter>
   );
