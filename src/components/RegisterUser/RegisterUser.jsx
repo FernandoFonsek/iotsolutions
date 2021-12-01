@@ -25,8 +25,8 @@ const RegisterUser = () => {
                 </div>
                 <h2 className=" text-4xl font-semibold text-fourth">Hello Again!</h2>
                 <h4 className="my-4 text-gray-500 text-third">Welcome back</h4>
-                <input className="text-third" type="text" placeholder="nombre"  className="w-4/5 py-4 pl-2 border-t border-l border-r  border-b border-gray-400 rounded-t-lg bg-graybox bg-opacity-20" onChange={(e)=>setUserInfo({...userInfo, userName: e.target.value})}/>
-                <input className="text-third" type="text" placeholder="ingrese tu correo"  className=" w-4/5 py-4 pl-2  border-b border-l border-r rounded-b-lg border-gray-400 bg-graybox bg-opacity-20" onChange={(e)=>setUserInfo({...userInfo, email: e.target.value})}/>
+                <input type="text" placeholder="nombre"  className="w-4/5 py-4 pl-2 border-t border-l border-r  border-b border-gray-400 rounded-t-lg bg-graybox bg-opacity-20 text-third" onChange={(e)=>setUserInfo({...userInfo, userName: e.target.value})}/>
+                <input type="text" placeholder="ingrese tu correo"  className=" w-4/5 py-4 pl-2  border-b border-l border-r rounded-b-lg border-gray-400 bg-graybox bg-opacity-20 text-third" onChange={(e)=>setUserInfo({...userInfo, email: e.target.value})}/>
                 <div className="w-4/5 m-auto text-right">
                     <button  className="divide-yellow-500 my-3 text-third ">Recovery Password</button>
                 </div>
